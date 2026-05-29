@@ -2,27 +2,21 @@ Algoritmo Ejercicio1
 	ingreso <- entero
 	gananciaTotal <- entero
 	cantidadVentas <- entero
-	cantidadVentas = -1
-	ingreso = 1
+	cantidadVentas = -1 //Inicializado en -1 para no contar la lectura de 0 como venta
+	Escribir "Bienvenido a SRP-RV Registro de Ventas"
+	// Lee ingreso, evalúa validez de ingreso, suma ganancia y hace conteo
 	Repetir
-		Escribir "Ingresar el monto de la venta, o cero para terminar"
+		Escribir "Ingrese el monto de una venta, o cero para terminar"
 		Leer ingreso
 		Si ingreso < 0 Entonces
-			Escribir "Error: debe ingresarse un monto positivo o cero"
-			Leer ingreso
+			// Captura un error por bucle, luego repetir atrapa hasta que se ingrese un valor positivo
+			Repetir
+				Escribir "Error: las ventas deben ingresarse como un monto positivo."
+				Leer ingreso	
+			Hasta Que ingreso >= 0
 		FinSi
 		gananciaTotal = gananciaTotal + ingreso
 		cantidadVentas = cantidadVentas + 1
 	Hasta Que ingreso = 0
-	//Mientras ingreso <> 0 Hacer
-	//Escribir "Ingresar el monto de la venta, o cero para terminar"
-	//Leer ingreso
-	//Si ingreso < 0 Entonces
-	//Escribir "Error: debe ingresarse un monto positivo o cero"
-	//Leer ingreso
-	//FinSi
-	//gananciaTotal = gananciaTotal + ingreso
-	//cantidadVentas = cantidadVentas + 1
-	//Fin Mientras
-	Escribir "Resumen: -Cantidad de ventas:", cantidadVentas, " -Total de ganancias: ", gananciaTotal
+	Escribir "Resumen: )- Cantidad de ventas: ", cantidadVentas, " )- Total de ganancias: ", gananciaTotal
 FinAlgoritmo
