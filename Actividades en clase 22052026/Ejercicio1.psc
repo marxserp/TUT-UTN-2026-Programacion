@@ -1,6 +1,6 @@
 Algoritmo Ejercicio1
-	ingreso <- entero
-	gananciaTotal <- entero
+	ingreso <- real
+	gananciaTotal <- real
 	cantidadVentas <- entero
 	cantidadVentas = -1 //Inicializado en -1 para no contar la lectura de 0 como venta
 	Escribir "Bienvenido a SRP-RV Registro de Ventas"
