@@ -2,18 +2,21 @@ Algoritmo Ejercicio3
 	estatura <- real
 	vip <- caracter
 	habilitado <- logico
-	Escribir "Welcome to the parque"
-	Escribir "Digite su estatura en centímetros, sin usar puntos ni comas"
+	Escribir "Le damos la bienvenida al parque temÃ¡tico"
+	Escribir "Ingrese su estatura en centÃ­metros, sin usar puntos ni comas:"
 	Leer estatura
-	Escribir "¿Posee usted un pase VIP? Tipee la letra ´S´ en caso que lo tenga. Si no lo tiene, tipee cualquier otra letra:"
+	Escribir "Â¿Posee usted un pase VIP? Tipee la letra Â´SÂ´ Si tiene uno. Si no lo tiene, tipee cualquier otra letra:"
 	Leer vip
 	Si estatura>150 Entonces
 		Si vip = "s" o vip = "S" Entonces
 			Escribir "~-~- Bienvenido al parque -~-~"
+			habilitado = Verdadero
 		SiNo
 			Escribir "No cuenta con pase VIP."
+			habilitado = Falso
 		FinSi
 	SiNo
-		Escribir "No cumple con el mínimo de estatura."
+		Escribir "No cumple con el mÃ­nimo de estatura."
+		habilitado = Falso
 	FinSi
 FinAlgoritmo
