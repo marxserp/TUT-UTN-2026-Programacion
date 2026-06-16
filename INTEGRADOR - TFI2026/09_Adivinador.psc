@@ -1,22 +1,19 @@
 Funcion acierto <- Termometrear (numeroRandom, numeroIngresado)
 	acierto = Logico
 	acierto = Falso
-	si numeroRandom-numeroIngresado >= 12 o numeroRandom-numeroIngresado <= -12 Entonces
-		Escribir "Frío"
-		acierto = Verdadero
+	si (numeroRandom-numeroIngresado) >= 12 o (numeroRandom-numeroIngresado) <= -12 Entonces
+		Escribir "FrÃ­o"
 	sino
-		si numeroRandom-numeroIngresado >= 9 o numeroRandom-numeroIngresado <= -9 Entonces
+		si (numeroRandom-numeroIngresado) >= 8 o (numeroRandom-numeroIngresado) <= -8 Entonces
 			Escribir "Tibio"
-			Escribir numeroRandom-numeroIngresado
 		SiNo
-			si numeroRandom-numeroIngresado >= 4 o numeroRandom-numeroIngresado <= -4 Entonces
+			si (numeroRandom-numeroIngresado) >= 1 o (numeroRandom-numeroIngresado) <= -1 Entonces
 				Escribir "Caliente"
-				Escribir numeroRandom-numeroIngresado
 			SiNo
-				si numeroRandom-numeroIngresado = 0 Entonces
+				si (numeroRandom-numeroIngresado) = 0 Entonces
 					Escribir "Adivinaste"
-					Escribir numeroRandom-numeroIngresado
-					finsi
+					acierto = Verdadero
+				finsi
 			FinSi
 		FinSi
 	FinSi
@@ -25,11 +22,14 @@ Algoritmo Adivinador
 	numeroRandom <- entero
 	numeroIngresado <- entero
 	acierto = Logico
+	cantidadIntentos <- entero
 	numeroRandom = Aleatorio(1, 25)
 	Escribir numeroRandom
 	Escribir "Adivina adivinador: "
 	Repetir
+		cantidadIntentos = cantidadIntentos + 1
 		leer numeroIngresado
 		acierto = Termometrear(numeroRandom, numeroIngresado)
 	Hasta Que acierto = Verdadero
+	Escribir "Cantidad de intentos: ", cantidadIntentos
 FinAlgoritmo
