@@ -6,9 +6,10 @@ Exceptuando el ejercicio número 10, todos los ejercicios fueron escritos en pse
 
 ### 👥 Integrantes del grupo
 
-- Integrante 1
-- Integrante 2
-- Integrante 3
-- Integrante 4    
+- Gabriel Lopez
+- Jonatan Alvarez
+- Marcos Serpa
+- Matias Aghetone
+- Sebastian Garcia    
 
 ---
