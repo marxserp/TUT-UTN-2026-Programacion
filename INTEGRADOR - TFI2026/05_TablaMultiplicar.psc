@@ -5,7 +5,7 @@ Funcion ObtenerTablaMultiplicar(numeroMultiplicable)
 FinFuncion
 Algoritmo TablaMultiplicar
 	numeroMultiplicable <- entero
-	Escribir "Ingresar el número del cual desee obtener la tabla de multiplicar: "
+	Escribir "Ingresar el nÃºmero del cual desee obtener la tabla de multiplicar: "
 	Leer numeroMultiplicable
 	ObtenerTablaMultiplicar(numeroMultiplicable)
 FinAlgoritmo
