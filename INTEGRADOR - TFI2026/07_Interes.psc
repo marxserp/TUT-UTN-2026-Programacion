@@ -3,7 +3,7 @@ Funcion CalcularInteres (capital, dias)
 	rendimiento = 0.08
 	Escribir "Capital ingresado: $", capital, " pesos"
 	Escribir "TEA estimada: +", rendimiento*365, "%"
-	Escribir "Últ. 7 días: +", rendimiento*7, "%"
+	Escribir "Ãšlt. 7 dÃ­as: +", rendimiento*7, "%"
 	Escribir "Total resultante: +/- $", redon(capital*rendimiento*dias), " pesos"
 FinFuncion
 Algoritmo Interes
@@ -11,7 +11,7 @@ Algoritmo Interes
 	dias <- entero
 	Escribir "Ingresar capital actual: "
 	Leer  capital
-	Escribir "Ingresar por cuántos días se dejará rendir al capital: "
+	Escribir "Ingresar por cuÃ¡ntos dÃ­as se dejarÃ¡ rendir al capital: "
 	leer dias
 	CalcularInteres(capital, dias)
 FinAlgoritmo
