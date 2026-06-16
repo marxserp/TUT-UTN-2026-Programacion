@@ -6,7 +6,7 @@ Exceptuando el ejercicio número 10, todos los ejercicios fueron escritos en pse
 
 ### 👥 Integrantes del grupo
 
-- Marcos Serpa
+- Integrante 1
 - Integrante 2
 - Integrante 3
 - Integrante 4    
