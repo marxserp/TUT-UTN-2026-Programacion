@@ -1,10 +1,10 @@
 Funcion Promediar (sumaListaNumeros, listaNumeros, longitudListaNumeros)
 	si longitudListaNumeros <> 0 Entonces
-		Escribir "Números ingresados: ", listaNumeros
-		Escribir "Cantidad de números leídos: ", longitudListaNumeros, " / Total: ", sumaListaNumeros
+		Escribir "NÃºmeros ingresados: ", listaNumeros
+		Escribir "Cantidad de nÃºmeros leÃ­dos: ", longitudListaNumeros, " / Total: ", sumaListaNumeros
 		Escribir "Promedio: ", sumaListaNumeros/longitudListaNumeros
 	SiNo
-		Escribir "No se ingresaron números"
+		Escribir "No se ingresaron nÃºmeros"
 	FinSi
 FinFuncion
 Algoritmo Promiedos
@@ -12,9 +12,9 @@ Algoritmo Promiedos
 	listaNumeros <- cadena
 	sumaListaNumeros <- real
 	longitudListaNumeros <- entero
-	Escribir "Ingrese números a promediar:"
-	Escribir "[i]: Valores negativos terminarán con el ingreso y no serán tenidos en cuenta."
-	Escribir "[i]: Se admite un máximo de 10 números."
+	Escribir "Ingrese nÃºmeros a promediar:"
+	Escribir "[i]: Valores negativos terminarÃ¡n con el ingreso y no serÃ¡n tenidos en cuenta."
+	Escribir "[i]: Se admite un mÃ¡ximo de 10 nÃºmeros."
 	Repetir
 		Leer numeroIngresado
 		si	numeroIngresado>=0 Entonces
