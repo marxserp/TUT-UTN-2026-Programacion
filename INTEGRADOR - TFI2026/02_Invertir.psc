@@ -1,11 +1,11 @@
 Funcion InvertirFrase(frase)
 	caracterExtraido <- cadena
 	fraseInvertida <- cadena
-	para i <- Longitud(frase)-1 hasta 0 con paso -1 Hacer
+	para i <- Longitud(frase) hasta 0 con paso -1 Hacer
 		caracterExtraido = Subcadena(frase, i, i)
 		fraseInvertida = fraseInvertida + caracterExtraido
 	FinPara
-	Escribir "Ah, ¿pero y si fuera al revés?"
+	Escribir "Ah, Â¿pero y si fuera al revÃ©s?"
 	Escribir fraseInvertida
 FinFuncion
 Algoritmo Invertir
