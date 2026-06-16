@@ -17,7 +17,7 @@ Funcion ConstruirPiramide (altura)
 FinFuncion
 Algoritmo Piramid
 	altura <- entero
-	Escribir "Ingresar altura de la pirámide"
+	Escribir "Ingresar altura de la pirÃ¡mide"
 	Leer altura
 	ConstruirPiramide(altura)
 FinAlgoritmo
